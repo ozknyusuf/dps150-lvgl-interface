@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblvgl_linux.a CMakeFiles/lvgl_linux.dir/lib/driver_backends.c.o CMakeFiles/lvgl_linux.dir/lib/mouse_cursor_icon.c.o CMakeFiles/lvgl_linux.dir/lib/simulator_util.c.o CMakeFiles/lvgl_linux.dir/lib/indev_backends/evdev.c.o CMakeFiles/lvgl_linux.dir/lib/display_backends/fbdev.c.o
+/usr/bin/ranlib liblvgl_linux.a

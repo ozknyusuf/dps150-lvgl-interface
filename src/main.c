@@ -344,12 +344,12 @@ void print_device_data(uint8_t type, uint8_t* data, uint8_t length) {
 
 
             lv_chart_series_t *ser_V = lv_chart_get_series_next(ui_Chart3, NULL);
-            temp = parse_float(data+ 16);
+            temp = parse_float(data+ 12);
             temp_scaled = (int32_t)(temp);
             lv_chart_set_next_value(ui_Chart3, ser_V,  temp_scaled); // 0.1°C hassasiyet için 10 ile çarp
             
             lv_chart_series_t *ser_A = lv_chart_get_series_next(ui_Chart3, ser_V);
-            temp = parse_float(data+ 12);
+            temp = parse_float(data+ 16);
             temp_scaled = (int32_t)(temp);
             lv_chart_set_next_value(ui_Chart3, ser_A,  temp_scaled); // 0.1°C hassasiyet için 10 ile çarp
 
